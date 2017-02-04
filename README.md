@@ -1,0 +1,11 @@
+# mthack
+
+Hello. We are attending MT Hack 2017 at MTSU.
+Our project is to create a simple webform which will serve as sign-in for a class.
+
+Iterative builds
+1) Create webform (simple HTML and CSS)
+2) Link it to Database and make it save in the database ( possibly mysql and php)
+3) will use MTSU server to launch
+3) create pdf and send it to instructor (tbd)
+4) add coordinates ( tbd)
