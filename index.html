@@ -1,8 +1,49 @@
+<!DOCTYPE html>
 <html>
+<head>
+<title>Sign In For Class</title>
+<link href="style.css" rel="stylesheet">
+</head>
+
+
 
 <body>
-<p> Hello World </p>
+<h1> Sign In </h1>
+<form>
+First name:<br>
+<input type="text" name="firstname"><br>
+Last name:<br>
+<input type="text" name="lastname"><br>
+User ID:<br>
+<input type="text" name="userid" maxlength="6"><br>
 
+
+<h4>Please Select Your Course</h4>
+<!--todo add drop down menu with course number selections-->
+<!--todo add drop down menu with section number-->
+<select name="course">
+<option value="csci1150">CSCI 1150</option>
+<option value="csci1170">CSCI 1170</option>
+<option value="csci2170">CSCI 2170</option>
+<option value="csci3080">CSCI 3080</option>
+<option value="csci3110">CSCI 3110</option>
+  </select>
+  <br>
+<h4>Please Select Your Section</h4>
+<select name="section">
+    <option value="001">001</option>
+    <option value="002">002</option>
+    <option value="003">003</option>
+    <option value="004">004</option>
+  </select>
+  <br><br>
+
+
+
+
+
+<input type="submit" value="Submit">
+</form>
 </body>
 
 </html>
