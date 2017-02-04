@@ -1,1 +1,22 @@
-body{background-color:#e6fcfc;}
+body{
+	background-color:#e6fcfc;
+}
+
+h1{
+	text-align:center; 	
+}
+
+img{
+	float:right;width:320px;
+	height:160px;
+	margin:100px;
+}
+
+h2{
+	text-align:left;
+}
+
+h5{
+	text-color: red;
+	
+}
