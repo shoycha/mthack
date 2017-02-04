@@ -6,6 +6,9 @@ Our project is to create a simple webform which will serve as sign-in for a clas
 Iterative builds
 1) Create webform (simple HTML and CSS) -->done
 2) Link it to Database and make it save in the database ( possibly mysql and php) --> done
-3) will use MTSU server to launch --> done
-3) create pdf and send it to instructor (tbd)
+3) make instructor retrieval page (tbd)
 4) add coordinates ( tbd) --> done
+
+
+bug fix notes -> database is accepting blank, add javascript required field
+make UI better
