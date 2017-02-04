@@ -37,7 +37,7 @@ if(!mysqli_query($con,$sql))
 
 else
 {
-	echo 'Inserted';
+	echo '$UID+ Already Signed In';
 }
 
 header("refresh:2; url=index.html");
