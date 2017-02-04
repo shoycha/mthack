@@ -20,12 +20,13 @@ $LName = $_POST['lastname'];
 $UID = $_POST['userid'];
 $Course = $_POST['course'];
 $Section = $_POST['section'];
+$lat = $_POST['lat'];
+$lon = $_POST['lon'];
+//var_dump($lat);
 
-//var_dump($_POST);
 
-
- $sql ="INSERT INTO Student (LastName,FirstName,UserID,CourseName,Section) 
-	VALUES ('$FName','$LName','$UID','$Course','$Section')";
+ $sql ="INSERT INTO Student (LastName,FirstName,UserID,CourseName,Section,Lat, Lng) 
+	VALUES ('$FName','$LName','$UID','$Course','$Section', '$lat', '$lon')";
 
 
 
