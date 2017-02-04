@@ -3,13 +3,28 @@
 <head>
 <title>Sign In For Class</title>
 <link href="style.css" rel="stylesheet">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+ <script>
+
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } else {
+        x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+}
+function showPosition(position) {
+    document.getElementById("lat").value =  position.coords.latitude;
+    document.getElementById("lon").value = position.coords.longitude;
+}
+</script>
 </head>
 
 
 
-<body>
+<body onload="getLocation()">
 <h1> Sign In </h1>
-<form action="insert.php" method="post">
+<form action="insert_1.php" method="post">
 First name:<br>
 <input type="text" name="firstname"><br>
 Last name:<br>
@@ -37,13 +52,17 @@ User ID:<br>
     <option value="004">004</option>
   </select>
   <br><br>
-
+<input id="lat" type="hidden" name="lat">
+<input id="lon" type="hidden" name="lon">
 
 
 
 
 <input type="submit" value="Submit">
 </form>
+
+
+
 </body>
 
 </html>
