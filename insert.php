@@ -22,7 +22,7 @@ $UID = $_POST['userid'];
 $Course = $_POST['course'];
 $Section = $_POST['section'];
 
-var_dump($_POST);
+//var_dump($_POST);
 
 
  $sql ="INSERT INTO Student (LastName,FirstName,UserID,CourseName,Section) 
@@ -32,7 +32,8 @@ var_dump($_POST);
 
 if(!mysqli_query($con,$sql))
 {
-	echo 'Not Inserted';
+	echo '<h2>Not Inserted</h2><br>';
+	echo '<h2>', $UID, ' is already signed in for ' , $Course, '</h2>';
 }
 
 else
