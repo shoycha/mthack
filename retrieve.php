@@ -10,7 +10,7 @@
    }
    $Course = $_POST['course'];
    $Section = $_POST['section'];
-   $sql = "SELECT LastName, FirstName, UserID FROM Student where CourseName = '" . $Course . "' and Section= '" . $Section . " ' ";
+   $sql = "SELECT LastName, FirstName, UserID, TimeStamp FROM Student where CourseName = '" . $Course . "' and Section= '" . $Section . " ' ";
    mysql_select_db('ss6k');
    $retval = mysql_query( $sql, $conn );
    
@@ -21,7 +21,8 @@
    while($row = mysql_fetch_array($retval, MYSQL_ASSOC)) {
       echo "Last Name :{$row['LastName']}  <br> ".
          "First Name : {$row['FirstName']} <br> ".
-         "Pipeline ID : {$row['userID']} <br> ".
+         "Pipeline ID : {$row['UserID']} <br> ".
+         "Time : {$row['TimeStamp']} <br> ".
          "--------------------------------<br>";
    }
    
