@@ -8,7 +8,4 @@ Iterative builds
 2) Link it to Database and make it save in the database ( possibly mysql and php) --> done
 3) make instructor retrieval page (tbd)
 4) add coordinates ( tbd) --> done
-
-
-bug fix notes -> database is accepting blank, add javascript required field
-make UI better
+5) make it responsive

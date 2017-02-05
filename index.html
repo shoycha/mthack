@@ -26,19 +26,17 @@ function showPosition(position) {
 <h1> Sign In </h1>
 <img src="HackMTLogo.jpg">
 
-<h2 style="text-align:left;">
+<h4 style="text-align:left;">
 <form action="insert.php" method="post">
-First name:<br>
-<input type="text" name="firstname" required><br>
-Last name:<br>
-<input type="text" name="lastname" required><br>
-User ID:<br>
+First name:&nbsp &nbsp
+<input type="text" name="firstname" required><br><br>
+Last name:&nbsp &nbsp
+<input type="text" name="lastname" required><br><br>
+User ID:&nbsp &nbsp
 <input type="text" name="userid" required maxlength="6"><br>
 
-
 <h4>Please Select Your Course</h4>
-<!--todo add drop down menu with course number selections-->
-<!--todo add drop down menu with section number-->
+
 <select name="course">
 <option value="csci1150">CSCI 1150</option>
 <option value="csci1170">CSCI 1170</option>
@@ -61,7 +59,7 @@ User ID:<br>
 
 
 
-<input type="submit" value="Submit">
+<input id="button" type="submit" value="Submit">
 </form>
 
 
